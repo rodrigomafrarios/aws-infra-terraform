@@ -1,0 +1,17 @@
+env    = "dev"
+region = "us-east-1"
+
+#login
+dynamodb_login_actions = ["dynamodb:UpdateItem", "dynamodb:GetItem"]
+
+#signup
+dynamodb_signup_actions = ["dynamodb:GetItem", "dynamodb:PutItem", "dynamodb:UpdateItem"]
+
+#images
+bucket_actions = ["s3:PutObject","s3:PutObjectAcl"]
+authorizer_fn = "authorizer"
+
+#system
+sample_id = "bb65c747-4fd8-4ff3-b4f2-cad76bba15b1"
+sample_email = "hate_frampton@gmail.com"
+sample_name = "Steve Marriott"
