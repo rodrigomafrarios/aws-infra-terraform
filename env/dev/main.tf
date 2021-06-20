@@ -23,9 +23,20 @@ module "images" {
   bucket_actions = var.bucket_actions
 }
 
+module "thumbnails" {
+  source = "../../infra/thumbnails"
+  env    = var.env
+  region = var.region
+  thumbnails_bucket_actions = var.thumbnails_bucket_actions
+  image_bucket = var.image_bucket
+  thumbnail_bucket = var.thumbnail_bucket
+}
+
 module "system" {
   source = "../../infra/system"
   env    = var.env
+  region = var.region
+  account_id = var.account_id
   read_capacity = 1
   write_capacity = 1
   sample_id = var.sample_id
