@@ -27,7 +27,7 @@ Under `infra/` path:
 
 **Steps**
 -
-1) cd env/dev
+1) cd env/sdx
 2) terraform init
 3) terraform plan
 4) terraform apply 
