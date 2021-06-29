@@ -7,5 +7,5 @@ variable "region" {
 }
 
 variable "bucket_actions" {
-  
+
 }
