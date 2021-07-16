@@ -1,3 +1,11 @@
+variable "env" {
+
+}
+
+variable "region" {
+
+}
+
 variable "dynamodb_login_actions" {
 
 }

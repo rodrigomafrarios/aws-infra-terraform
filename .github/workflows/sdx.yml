@@ -8,7 +8,6 @@ jobs:
   terraform:
     runs-on: ubuntu-latest
     environment:
-      name: sdx
       AWS_ACCESS_KEY_ID: ${{ secrets.SDX_AWS_ACCESS_KEY_ID }} 
       AWS_SECRET_ACCESS_KEY: ${{ secrets.SDX_AWS_SECRET_ACCESS_KEY }}
     

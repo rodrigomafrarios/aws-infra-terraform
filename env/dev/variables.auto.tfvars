@@ -1,3 +1,6 @@
+env    = "dev"
+region = "us-east-1"
+
 #login
 dynamodb_login_actions = ["dynamodb:UpdateItem", "dynamodb:GetItem"]
 
