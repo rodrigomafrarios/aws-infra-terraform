@@ -1,15 +1,19 @@
-variable "account_id" {
-
+variable "apigateway_arn" {
+  
 }
 
-variable "region" {
-  default = "us-east-1"
-}
-
-variable "rest_api_id" {
-
+variable "function_arn" {
+  
 }
 
 variable "function_name" {
+
+}
+
+variable "function_method" {
+  
+}
+
+variable "function_path" {
   
 }
