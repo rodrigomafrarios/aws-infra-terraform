@@ -1,17 +1,13 @@
-variable "function_name" {
-
-}
-
 variable "handler" {
   default = ""
 }
 
-variable "runtime" {
-  default = "nodejs14.x"
+variable "region" {
+  default = "us-east-1"
 }
 
-variable "iam_role_arn" {
-
+variable "runtime" {
+  default = "nodejs14.x"
 }
 
 variable "memory_size" {
@@ -22,16 +18,16 @@ variable "timeout" {
   default = "5"
 }
 
+variable "iam_role_arn" {
+
+}
+
 variable "account_id" {
 
 }
 
 variable "name" {
 
-}
-
-variable "region" {
-  default = "us-east-1"
 }
 
 variable "resource_depends_on" {
@@ -51,5 +47,13 @@ variable "layers" {
 }
 
 variable "project" {
+
+}
+
+variable "s3_bucket_name" {
+  
+}
+
+variable "s3_key" {
   
 }
