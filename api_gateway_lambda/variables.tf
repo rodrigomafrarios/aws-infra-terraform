@@ -1,3 +1,7 @@
+variable "project_name" {
+  type = string
+}
+
 variable "account_id" {
   type = string
 }
@@ -28,6 +32,6 @@ variable "path" {
 }
 
 variable "authorization" {
-  type = string
+  type    = string
   default = "NONE"
 }
