@@ -3,7 +3,7 @@ variable "project" {
 }
 
 variable "account_id" {
-  
+
 }
 
 variable "region" {
@@ -24,9 +24,4 @@ variable "dynamodb_login_actions" {
 
 variable "sample_jwt_secret" {
 
-}
-
-variable "lambda_deployment_bucket_arn" {
-  type = string
-  default = ""
 }
