@@ -18,13 +18,12 @@ module "system" {
 }
 
 module "account" {
-  source                  = "../../services/account"
-  account_id              = module.global_variables.account_id
+  source                       = "../../services/account"
+  account_id                   = module.global_variables.account_id
   dynamodb_table_accounts_name = module.system.dynamodb_table_accounts_name
-  dynamodb_signup_actions = var.dynamodb_signup_actions
-  dynamodb_login_actions  = var.dynamodb_login_actions
-  sample_jwt_secret       = var.sample_jwt_secret
-  lambda_deployment_bucket_arn = module.system.lambda_deployment_bucket_arn
+  dynamodb_signup_actions      = var.dynamodb_signup_actions
+  dynamodb_login_actions       = var.dynamodb_login_actions
+  sample_jwt_secret            = var.sample_jwt_secret
 }
 
 module "images" {
