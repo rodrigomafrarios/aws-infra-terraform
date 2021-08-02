@@ -1,5 +1,5 @@
 module "s3_deployment_account_bucket" {
-  source = "../../s3_bucket"
+  source = "../../s3"
   bucket_name = "${terraform.workspace}-${var.account_id}-${var.project}-deployment"
 }
 
