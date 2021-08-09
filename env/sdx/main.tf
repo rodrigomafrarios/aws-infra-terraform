@@ -26,13 +26,9 @@ module "account" {
   sample_jwt_secret            = var.sample_jwt_secret
 }
 
-module "images" {
-  source         = "../../services/images"
+module "image" {
+  source         = "../../services/image"
   bucket_actions = var.bucket_actions
-}
-
-module "thumbnails" {
-  source                    = "../../services/thumbnails"
   thumbnails_bucket_actions = var.thumbnails_bucket_actions
   image_bucket              = var.image_bucket
   thumbnail_bucket          = var.thumbnail_bucket

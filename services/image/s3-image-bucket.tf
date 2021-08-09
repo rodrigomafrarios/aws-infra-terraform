@@ -1,6 +1,6 @@
-resource "aws_s3_bucket" "upload_image" {
-  bucket = "${terraform.workspace}-uploaded-images"
-  acl    = "private"
+module "s3_upload_image_bucket" {
+  source = "../../s3"
+  bucket_name = "${terraform.workspace}-${var.account_id}-${var.project}-uploaded-images"
 }
 
 resource "aws_ssm_parameter" "upload_image_bucket" {
