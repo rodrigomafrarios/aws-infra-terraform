@@ -7,13 +7,13 @@ on:
 jobs:
   terraform:
     runs-on: ubuntu-latest
-    environment:
-      AWS_ACCESS_KEY_ID: ${{ secrets.SDX_AWS_ACCESS_KEY_ID }} 
-      AWS_SECRET_ACCESS_KEY: ${{ secrets.SDX_AWS_SECRET_ACCESS_KEY }}
+    environment: sdx
     
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        
+      - name: Setup terraform
         uses: hashicorp/setup-terraform@v1
       
       - name: Configure AWS credentials
@@ -41,5 +41,5 @@ jobs:
 
       - name: Terraform Apply
         uses: dflook/terraform-apply@v1
-          with:
-            auto_approve: true
+        with:
+          auto_approve: true
