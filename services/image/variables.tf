@@ -6,18 +6,14 @@ variable "project" {
   default = "image"
 }
 
-variable "bucket_actions" {
+variable "account_id" {
+
+}
+
+variable "images_bucket_actions" {
 
 }
 
 variable "thumbnails_bucket_actions" {
-
-}
-
-variable "image_bucket" {
-
-}
-
-variable "thumbnail_bucket" {
 
 }

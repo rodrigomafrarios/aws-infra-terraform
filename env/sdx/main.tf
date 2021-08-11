@@ -27,9 +27,8 @@ module "account" {
 }
 
 module "image" {
-  source         = "../../services/image"
-  bucket_actions = var.bucket_actions
+  source                    = "../../services/image"
+  account_id                = module.global_variables.account_id
+  images_bucket_actions     = var.images_bucket_actions
   thumbnails_bucket_actions = var.thumbnails_bucket_actions
-  image_bucket              = var.image_bucket
-  thumbnail_bucket          = var.thumbnail_bucket
 }
