@@ -8,6 +8,6 @@ resource "aws_lambda_layer_version" "latest" {
   layer_name          = "latest-layer"
   description         = "latest"
   s3_bucket           = "${terraform.workspace}-${var.account_id}-${var.project}-deployment" 
-  s3_key              = "deploy/thumbnail/layer.zip"
+  s3_key              = "deploy/create-thumbnail/layer.zip"
   compatible_runtimes = ["nodejs14.x"]
 }

@@ -23,8 +23,8 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
       
-      - name: Terraform Lint
-        run: terraform fmt -check -recursive
+      # - name: Terraform Lint
+      #   run: terraform fmt -check -recursive
 
       - name: Terraform Init
         id: init
